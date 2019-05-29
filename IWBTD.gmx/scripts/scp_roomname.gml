@@ -1,0 +1,49 @@
+///scp_roomname(room)
+switch(argument[0]){
+case rmstage01a:
+case rmstage01b:
+case rmstage01c:
+case rmboss1:
+case rmboss1b:
+    return es('stage','1');
+    
+case rmstage02a:
+case rmstage02b:
+case rmboss02:
+    return es('stage','2');
+case rmstage03a:
+case rmstage03b:
+case rmstage03c:
+case rmstage03d:
+case rmboss03:
+    return es('stage','3');
+case rmstage04a:
+case rmstage04b:
+case rmstage04c:
+case rmstage04d:
+case rmboss04:
+case rmstage04e:
+    return es('stage','4');
+
+case rmstage05a:
+case rmstage05b:
+case rmstage05c:
+case rmstage05d:
+case rmstage05e:
+case rmboss05:
+    return es('stage','5');
+
+case rmstageFinal0:
+case rmstageFinal1:
+case rmstageFinal2:
+case rmstageFinal3:
+    return es('stage','6');
+
+case rmteleport:
+    return es('stage','tp');
+
+case rmlastboss: 
+    return es('stage','last');
+default:
+    return es('stage','u');
+}
