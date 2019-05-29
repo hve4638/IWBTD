@@ -189,13 +189,8 @@ draw_rectangle(0,0,800,600,false);
 
 shader_reset();
 */
-with(Me) draw_self();
 //draw godray effect
-shader_set(sh_godrays);
-
-shader_set_uniform_f(u_resolution,800.0,600.0);
-
-shader_set_uniform_f(u_seconds,sec);
+shader_set(sh_tower);
 
 draw_rectangle(0,0,800,600,false);
 

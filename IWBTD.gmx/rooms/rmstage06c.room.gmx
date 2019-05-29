@@ -130,7 +130,7 @@
     <instance objName="obj_water3" x="896" y="1088" name="inst_B8CBA49E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water2" x="800" y="960" name="inst_65E47851" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="928" y="1088" name="inst_EC9A4F1B" locked="0" code="" scaleX="5" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_save" x="992" y="1056" name="inst_73438AA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_save" x="1504" y="1024" name="inst_73438AA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="416" y="992" name="inst_34F0E6A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="448" y="992" name="inst_D2DC57AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="448" y="992" name="inst_0E7CA7C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -140,8 +140,6 @@
     <instance objName="obj_spike" x="544" y="992" name="inst_76293164" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="352" y="992" name="inst_A75A4E64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike_d" x="576" y="960" name="inst_BBB9B986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike" x="1088" y="1088" name="inst_E30823A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spike" x="1120" y="1088" name="inst_225CE06C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="1152" y="1088" name="inst_7DB13517" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="1184" y="1088" name="inst_C7DE7C76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="1216" y="1088" name="inst_DC82D7A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -152,8 +150,6 @@
     <instance objName="obj_spike" x="1376" y="1088" name="inst_4761C8A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1088" y="1120" name="inst_BCDEA2CC" locked="0" code="" scaleX="10" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1408" y="1056" name="inst_E1D24718" locked="0" code="" scaleX="6" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water3" x="1088" y="1088" name="inst_6374F708" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water3" x="1120" y="1088" name="inst_195970AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water3" x="1152" y="1088" name="inst_8FB96E19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water3" x="1184" y="1088" name="inst_287C6A06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water3" x="1216" y="1088" name="inst_8474BAD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -312,6 +308,10 @@
     <instance objName="obj_trigger" x="2592" y="704" name="inst_06B30160" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="1920" y="544" name="inst_08960CD5" locked="0" code="cs = CS_CAMTYPE;&#xA;c_type = 4;&#xA;c_xmin = 0;&#xA;c_xmax = room_width - 800;&#xA;c_ymin = 480;&#xA;c_ymax = 480;&#xA;" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="256" y="-32" name="inst_1C127C10" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spike" x="1088" y="1088" name="inst_A34B667B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spike" x="1120" y="1088" name="inst_B744AB0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water3" x="1088" y="1088" name="inst_1097D5E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_water3" x="1120" y="1088" name="inst_8EEEF937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile06" x="2592" y="736" w="32" h="32" xo="64" yo="32" id="10089206" name="inst_215B9FE8" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

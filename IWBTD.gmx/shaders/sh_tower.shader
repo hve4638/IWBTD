@@ -9,9 +9,16 @@ attribute vec2 in_TextureCoord;              // (u,v)
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
+uniform float camX;
+uniform float camY;
+
 void main()
 {
-    vec4 object_space_pos = vec4( in_Position.x, in_Position.y, in_Position.z, 1.0);
+    float fx = in_Position.x;
+    float n = in_Position.x - 400.0;
+    float fy = ((106.0-in_Position.y) + 106.0) / 160000.0 * n * n + 306.0 - in_Position.y;
+
+    vec4 object_space_pos = vec4( fx, fy, in_Position.z, 1.0);
     gl_Position = gm_Matrices[MATRIX_WORLD_VIEW_PROJECTION] * object_space_pos;
     
     v_vColour = in_Colour;

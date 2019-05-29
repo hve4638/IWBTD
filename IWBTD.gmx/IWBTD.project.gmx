@@ -323,6 +323,7 @@
     <sprite>sprites\spr_bubble</sprite>
     <sprite>sprites\spr_warning3</sprite>
     <sprite>sprites\spr_portcullis</sprite>
+    <sprite>sprites\spr_block_tower</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Background">
@@ -460,6 +461,7 @@
     <shader type="GLSLES">shaders\sh_underwater.shader</shader>
     <shader type="GLSLES">shaders\sh_basic.shader</shader>
     <shader type="GLSLES">shaders\shader3.shader</shader>
+    <shader type="GLSLES">shaders\sh_tower.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\Font0</font>
@@ -493,6 +495,7 @@
       <object>objects\playerKiller</object>
       <object>objects\obj_GAMEOVER</object>
       <object>objects\sys_sound</object>
+      <object>objects\sys_shader</object>
     </objects>
     <objects name="block">
       <object>objects\obj_block</object>
@@ -687,7 +690,6 @@
     </objects>
     <object>objects\obj_karena</object>
     <object>objects\sys_part</object>
-    <object>objects\sys_shader</object>
     <object>objects\obj_dimension</object>
     <object>objects\obj_event_ending</object>
     <object>objects\obj_event_boss</object>
@@ -701,6 +703,7 @@
     <object>objects\obj_warning_meteo</object>
     <object>objects\obj_portcullis</object>
     <object>objects\obj_lasergener3</object>
+    <object>objects\obj_block_tower</object>
   </objects>
   <timelines name="timelines">
     <timelines name="boss_golem">
