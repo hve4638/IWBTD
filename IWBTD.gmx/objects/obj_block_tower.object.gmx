@@ -83,13 +83,9 @@ else {visible=0;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shader_set(sh_tower);
-
-shader_set_uniform_f(camX,400);
-shader_set_uniform_f(camY,304);
+            <string>scp_towersh();
 
 draw_sprite(spr_block_tower,0,x,y);
-
 shader_reset();
 </string>
           </argument>

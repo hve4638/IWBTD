@@ -38,6 +38,7 @@ wuss=false; guy=false;
 kid_inv=0; kid_hp=1; kid_mxhp=1;
 perver=-1; prever=-1;
 
+towershader=false;
 showkey=false;
 SWITCH[0] = 0;
 
@@ -398,6 +399,9 @@ if instance_exists(obj_player) &amp;&amp; obj_player.FLIP {
 }
 if room==rmstage04a showkey=true;
 else showkey=false;
+
+if room==rmstage06d towershader = true;
+else towershader = false;
 
 event_user(0);
 with(obj_lockdestroy) instance_destroy();

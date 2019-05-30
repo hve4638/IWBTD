@@ -455,6 +455,8 @@
     <script>scripts\scp_convert_0_86.gml</script>
     <script>scripts\scp_convert_0_9.gml</script>
     <script>scripts\scp_issave_correct.gml</script>
+    <script>scripts\scp_towersh.gml</script>
+    <script>scripts\scp_towersh_create.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_godrays.shader</shader>
@@ -704,6 +706,7 @@
     <object>objects\obj_portcullis</object>
     <object>objects\obj_lasergener3</object>
     <object>objects\obj_block_tower</object>
+    <object>objects\sys_tiletoblock</object>
   </objects>
   <timelines name="timelines">
     <timelines name="boss_golem">
