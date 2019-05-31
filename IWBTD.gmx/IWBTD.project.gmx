@@ -324,6 +324,7 @@
     <sprite>sprites\spr_warning3</sprite>
     <sprite>sprites\spr_portcullis</sprite>
     <sprite>sprites\spr_block_tower</sprite>
+    <sprite>sprites\spr_door</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Background">
@@ -355,6 +356,8 @@
     <background>background\tile07</background>
     <background>background\tile08</background>
     <background>background\tile09</background>
+    <background>background\tile12</background>
+    <background>background\background59</background>
     <background>background\tile10</background>
     <background>background\tile11</background>
     <background>background\background26</background>
@@ -707,6 +710,8 @@
     <object>objects\obj_lasergener3</object>
     <object>objects\obj_block_tower</object>
     <object>objects\sys_tiletoblock</object>
+    <object>objects\obj_noone</object>
+    <object>objects\obj_towerbackground</object>
   </objects>
   <timelines name="timelines">
     <timelines name="boss_golem">
@@ -895,6 +900,8 @@
       <room>rooms\rmstage06b</room>
       <room>rooms\rmstage06c</room>
       <room>rooms\rmstage06d</room>
+      <room>rooms\rmstage06e</room>
+      <room>rooms\room63</room>
     </rooms>
     <room>rooms\rmstage06</room>
     <room>rooms\rmsin2_old</room>

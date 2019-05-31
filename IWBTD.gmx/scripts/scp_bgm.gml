@@ -42,6 +42,7 @@ case rmstage05d:
 case rmstage06a:
 case rmstage06b:
 case rmstage06c:
+case rmstage06d:
     nbgm = snd_Stage6;
     loop = 1;
     break;

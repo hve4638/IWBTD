@@ -16,7 +16,7 @@ void main()
 {
     float fx = in_Position.x;
     float n = in_Position.x - camX;
-    float fy = -(camY-in_Position.y) / 260000.0 * n * n + in_Position.y;
+    float fy = -(camY-in_Position.y) / 450000.0 * n * n + in_Position.y; // 500000.0
 
     vec4 object_space_pos = vec4( fx, fy, in_Position.z, 1.0);
     gl_Position = gm_Matrices[MATRIX_WORLD_VIEW_PROJECTION] * object_space_pos;

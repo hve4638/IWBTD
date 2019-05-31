@@ -305,7 +305,7 @@
     <instance objName="obj_block" x="896" y="544" name="inst_E454BB33" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="1504" y="800" name="inst_21ED7A58" locked="0" code="" scaleX="3" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="768" y="1056" name="inst_C71121DB" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger" x="2592" y="704" name="inst_06B30160" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger" x="2586" y="699" name="inst_06B30160" locked="0" code="cs = 56;&#xA;" scaleX="0.9375" scaleY="2.13000011444092" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="1920" y="544" name="inst_08960CD5" locked="0" code="cs = CS_CAMTYPE;&#xA;c_type = 4;&#xA;c_xmin = 0;&#xA;c_xmax = room_width - 800;&#xA;c_ymin = 480;&#xA;c_ymax = 480;&#xA;" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="256" y="-32" name="inst_1C127C10" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="1088" y="1088" name="inst_A34B667B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

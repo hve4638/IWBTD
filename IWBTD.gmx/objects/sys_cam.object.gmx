@@ -62,7 +62,6 @@ with(obj_fakeplayer) {
         other.stime=8;
         image_alpha=1;
     }
-    
 }
 
 
@@ -269,10 +268,19 @@ with(all) {
     || object_index==obj_sin1event
     || object_index==obj_shift
     || object_index==obj_ignis
+    || object_index==obj_towerbackground
     {} else if point_distance(other.x+400,other.y+308,x,y)&lt;1600 {visible=1;}
     else {visible=0;}
 }
-if vismask with(all) visible=1;
+with(obj_block_tower)
+    if point_distance(other.x+400,other.y+308,x,y)&lt;1600 {visible=1;}
+    else {visible=0;}
+if vismask 
+{
+    with(all) visible=1;
+    image_alpha = 1.0;
+}
+
 
 
 

@@ -37,6 +37,7 @@
 image_speed=0.5;
 
 x++;
+scp_towersh_create();
 </string>
           </argument>
         </arguments>
@@ -59,7 +60,9 @@ x++;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x--; draw_self(); x++;
+            <string>scp_towersh();
+x--; draw_self(); x++;
+shader_reset();
 </string>
           </argument>
         </arguments>

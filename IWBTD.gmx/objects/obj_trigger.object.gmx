@@ -987,6 +987,62 @@ switch(cs)
             instance_destroy();
         }
     } break;
+    
+    case 56:
+    {
+        if ps&lt;40
+        {
+            On=false;
+        }
+        else
+        {
+            if ps==40
+            {
+                ongod=true;
+                with(obj_player) frozen = true;
+                with(sys_cam) {
+                    fade_get=0.02;
+                    fade_col=c_black;
+                }
+            }
+            else if ps==100
+            {
+                persistent = 1;
+            }
+            else if ps==101
+            {
+                room_goto(rmstage06d);
+            }
+            else if ps==102
+            {
+                
+                ongod=false;
+                with(sys_cam) {
+                    fade_set = 1;
+                    fade_get = -0.01;
+                    fade_col=c_black;
+                }
+                instance_destroy();
+            }
+        }
+    } break;
+    
+    case 57:
+    {
+        with(obj_player)
+        {
+            x += other.c_tox;
+            y += other.c_toy;
+        }
+        with(sys_cam)
+        {
+            x += other.c_tox;
+            y += other.c_toy;
+            rx += other.c_tox;
+            ry += other.c_toy;
+        }
+        On = false;
+    } break;
 }
 
 
