@@ -70,7 +70,7 @@ for(var i=0;i&lt;2;i++) {
     var j=ds_list_find_value(ds_tmp,0)-1;
     ds_list_delete(ds_tmp,0);
     
-    var l=instance_create(x-image_angle*32,448+12-j*40-32,obj_bloodball);
+    var l=instance_create(x-image_angle*32,448+12-j*40-64,obj_bloodball);
     l.sleep=35;
     l.movspd=0.8; l.speed=0;
     l.depth=-20;

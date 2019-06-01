@@ -28,7 +28,7 @@
             <string>scp_act_set();
 
 image_alpha=0;
-movalp=0.03;
+movalp=0.02;
 alarm[0]=50;
 </string>
           </argument>
@@ -54,7 +54,7 @@ alarm[0]=50;
             <kind>1</kind>
             <string>var j=instance_create(x,irandom_range(-96,0),obj_meteo);
 j.movspd=1; j.speed=1;
-j.direction=270; j.ep_y=432;
+j.direction=270; j.ep_y=400-16;
 j.sndr=2;
 
 instance_destroy();
@@ -81,7 +81,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>alarm[1]=10;
-movalp=-0.1;
+movalp=-0.07;
 </string>
           </argument>
         </arguments>
@@ -105,6 +105,8 @@ movalp=-0.1;
           <argument>
             <kind>1</kind>
             <string>scp_act_step();
+image_alpha = min(image_alpha,0.8)
+image_yscale += 0.07;
 </string>
           </argument>
         </arguments>

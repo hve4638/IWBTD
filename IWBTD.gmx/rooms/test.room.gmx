@@ -68,7 +68,7 @@ with(obj_event_ending) instance_destroy();</code>
     <instance objName="obj_teleport" x="32" y="192" name="inst_5A3C98B2" locked="0" code="per=0; type=1;&#xA;GOTO=rmstage01a;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_text" x="32" y="544" name="inst_EF44B4E6" locked="0" code="text='1 Stage'&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="32" y="128" name="inst_FB38FFFD" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmboss1b;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_teleport" x="480" y="128" name="inst_6B78A3BE" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmsin2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_teleport" x="480" y="128" name="inst_6B78A3BE" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmboss06;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="96" y="192" name="inst_1F899330" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmstage02a;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="160" y="192" name="inst_655F70F5" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmstage03a;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="160" y="128" name="inst_E80C8320" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmstage03c;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

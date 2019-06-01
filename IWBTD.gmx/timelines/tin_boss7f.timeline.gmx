@@ -82,13 +82,13 @@ t_i++;
 if (phase&lt;=2 &amp;&amp; t_i&lt;=10) || (3&lt;=phase &amp;&amp; t_i&lt;=16) {
     if 3&lt;=phase &amp;&amp; t_i==8 {
         for(var i=32;i&lt;800;i+=64) {
-            var k=instance_create(i,480,obj_lasergener2);
+            var k=instance_create(i,480-32,obj_lasergener2);
             k.FUSE=35;
         }
     }
     else if 3&lt;=phase &amp;&amp; t_i==13 {
         for(var i=0;i&lt;800;i+=64) {
-            var k=instance_create(i,480,obj_lasergener2);
+            var k=instance_create(i,480-32,obj_lasergener2);
             k.FUSE=35;
         }
     }

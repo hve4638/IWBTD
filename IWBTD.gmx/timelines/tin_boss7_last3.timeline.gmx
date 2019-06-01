@@ -19,7 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>t_i=0;
+            <string>///Ignis Pattern
+t_i=0;
 
 timeline_position=80;
 </string>
@@ -89,14 +90,14 @@ timeline_position=80;
           <argument>
             <kind>1</kind>
             <string>if t_i&lt;10 {
-    var i=instance_create(0,300,obj_circle_flamegener);
+    var i=instance_create(0,300-32,obj_circle_flamegener);
     with(i) {
         image_alpha=0.3;
         direction=15+other.t_i;
         stime=8; speed=5;
         movdir=-0.1;
     }
-    var i=instance_create(800,300,obj_circle_flamegener);
+    var i=instance_create(800,300-32,obj_circle_flamegener);
     with(i) {
         image_alpha=0.3;
         direction=180-15-other.t_i;

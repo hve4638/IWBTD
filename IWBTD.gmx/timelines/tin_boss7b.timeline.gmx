@@ -62,7 +62,8 @@ p_j=k;
 
 for(var i=0;i&lt;4;i++) {
     if !ds_list_find_value(ds_tmp,i) continue;
-    var l=instance_create(x-image_angle*32,448+12-i*40-32,obj_bloodball);
+    
+    var l=instance_create(x-image_angle*32,448+12-i*40-64,obj_bloodball);
     l.sleep=35;
     l.movspd=0.8; l.speed=0;
     l.depth=-20;

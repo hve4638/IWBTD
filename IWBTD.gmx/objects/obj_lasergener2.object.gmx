@@ -57,15 +57,15 @@ FUSE=30;
         if ++prt[16]==0 event_user(0);
         part_type_color1(particle[16],128);
         part_system_depth(Sys[16],1);
-        part_emitter_region(Sys[16],emitter[16],other.x-5,other.x+5,other.y-4,other.y,1,1);
+        part_emitter_region(Sys[16],emitter[16],other.x-8,other.x+8,other.y-4,other.y,1,1);
         part_emitter_burst(Sys[16],emitter[16],particle[16],5);
     }
 }
 else if t==FUSE {
-    var i=instance_create(x,448,obj_laser);
-    with(i) {image_angle=90; ar=2; ad=1; depth=-20; image_index=1; image_blend=c_white;}
+    var i=instance_create(x,448-32,obj_laser);
+    with(i) {image_angle=90; ar=3; ad=2; depth=-20; image_index=1; image_blend=c_white;}
     
-    i=instance_create(x,448,obj_charge);
+    i=instance_create(x,448-32,obj_charge);
     with(i) {
         image_blend=128;
         image_xscale=0.3;

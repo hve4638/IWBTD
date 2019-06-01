@@ -19,7 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>t_i=0; t_j=3; t_k=0;
+            <string>///Aqua Pattern
+t_i=0; t_j=3; t_k=0;
 
 
 for(var i=0;i&lt;room_width;i+=32) {
@@ -67,7 +68,7 @@ depth=-10;
             <kind>1</kind>
             <string>t_i=0;
 for(var i=0;i&lt;room_width;i+=32) {
-    var j=instance_create(i,448,obj_spike);
+    var j=instance_create(i,448-32,obj_spike);
     with(j) {
         depth=10;
         vspeed=-2;

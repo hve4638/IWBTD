@@ -25,13 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0;
-direction=90;
-D=choose(1,-1); 
-speed=random_range(-0.05,0.05);
-T=irandom_range(0,4);
+            <string>scp_act_set();
+image_speed=0;
+I = irandom_range(0,360);
 
 la=0;
+la_blend = c_white;
 </string>
           </argument>
         </arguments>
@@ -72,6 +71,9 @@ with(sys_part) {
     part_emitter_burst(Sys[26],emitter[26],particle[26],1);
 }
 K++;*/
+
+
+
 </string>
           </argument>
         </arguments>
@@ -92,15 +94,10 @@ K++;*/
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if T++ mod 5 == 0 {
-    if D {
-        speed+=0.01;
-        if 0.05&lt;speed {D=!D;}
-    } else {
-        speed-=0.01;
-        if -0.05&gt;speed {D=!D;}
-    }
-}
+            <string>y = ystart + sin(degtorad(I)) * 2;
+scp_act_step();
+
+I++;
 </string>
           </argument>
         </arguments>
@@ -124,7 +121,7 @@ K++;*/
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_sprite_ext(spr_sealedstone_white,image_index,x,y,1,1,0,c_white,la);
+draw_sprite_ext(spr_sealedstone_white,image_index,x,y,1,1,0,la_blend,la);
 
 </string>
           </argument>

@@ -116,22 +116,6 @@ switch(cs)
         }
     } break;
     case 4: {
-    /*
-        var t=0;
-        with(sys_cam) {
-            target=noone; xmin=800; xmax=room_width-800;
-            if rx+1&lt;Me.x-400 {rx+=point_distance(rx,0,Me.x-400,0)/8;} else if rx&lt;Me.x-400 {t=1;}
-            if rx-1&gt;Me.x-400 {rx-=point_distance(rx,0,Me.x-400,0)/8;} else if rx&gt;Me.x-400 {t=1;}
-            if rx==xmin t=1;
-        }
-        if t {
-            with(sys_cam) {
-                target=obj_fakeplayer;
-                type=0;
-                mx=800; my=608;
-            }
-            instance_destroy();
-        }*/
         with(sys_cam) {
             target=obj_fakeplayer;
             type=4;
@@ -1011,11 +995,14 @@ switch(cs)
             }
             else if ps==101
             {
-                room_goto(rmstage06d);
+                room_goto(c_goto);
             }
             else if ps==102
             {
-                
+                with(obj_player)
+                {
+                    scp_save(x,y,room);
+                }
                 ongod=false;
                 with(sys_cam) {
                     fade_set = 1;
@@ -1042,6 +1029,117 @@ switch(cs)
             ry += other.c_toy;
         }
         On = false;
+    } break;
+    
+    case 58:
+    {
+        if ps == 0
+        {
+            with(sys_cam)
+            {
+                type = 3;
+                tx = 1184 - 400;
+                ty = 0;
+                ymin = room_height - 608;
+                
+                MX = 20;
+                MY = 20;
+            }
+        }
+        if 0&lt;=ps &amp;&amp; ps&lt;60 {
+            cansave=0;
+            ongod = true;
+            with(obj_player) {
+                frozen=true;
+                INDEX=spr_PlayerRunning;
+                INDEX_SPEED=0.2;
+                adhspd=2.5;
+            }
+        }
+        if ps == 60
+        {
+            with(obj_player) {
+                frozen=true;
+                INDEX=noone;
+            }
+            ps = 90;
+        }
+            
+        if 150&lt;ps &amp;&amp; ps&lt;270
+        {
+            if 250&lt;=ps scp_shake(6,1,1);
+            else if 200&lt;=ps scp_shake(4,1,1);
+            else if 150&lt;=ps scp_shake(2,1,1);
+            
+            if 150&lt;ps
+            with(obj_sealedstone) {
+                la+=0.02;
+            }
+        }
+        if ps == 225
+        {
+            var i = instance_create(1600,irandom_range(256-32,256+32),obj_bloodball);
+            with(i)
+            {
+                direction = point_direction(x,y,1184,256);
+                minspd=0; movspd=0; isaft = true;
+                image_alpha = 1;
+                speed = 19;
+            }
+        }
+        if ps == 244
+        {
+            room_goto(rmsin4);
+        }
+    } break;
+    
+    case 59:
+    {
+        if ps == 40 
+        {
+            with(sys_cam)
+            {
+                fade_get = -0.02;
+            }
+        }
+        
+        if ps == 120
+        {
+            with(obj_sealedstone)
+            {
+                if scp_follow(obj_event_vampire.x,obj_event_vampire.y,15)&lt;32
+                {
+                    instance_destroy();
+                }
+                other.ps = 119;
+            }
+        }
+        else if ps == 121
+            ps = 240;
+            
+        if ps==270 {
+            with(obj_event_vampire) {
+                var i=instance_create(x,y,obj_banjak);
+                i.image_xscale=0; i.image_yscale=0;
+                i.movxsc=0.2; i.movysc=0.2;
+            }
+        }
+        else if ps==285 with(obj_banjak) {movxsc=2.5; movysc=2.5;}
+        else if ps==340 scp_sfx(snd_Explode3,3);
+        else if ps==355 {
+            persistent=1;
+        }
+        else if ps==356 {
+            room_goto(rmboss06);
+        } else if ps==357 {
+            cansave=1;
+            ongod = false;
+            with(sys_cam) {fade_set=1; fade_get=-0.01; fade_col=c_white;}
+            scp_shake(3,100,1);
+            scp_save(Me.x,Me.y,rmboss06);
+            instance_destroy();
+        }
+    
     } break;
 }
 

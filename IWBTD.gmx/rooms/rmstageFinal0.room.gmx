@@ -69,16 +69,16 @@ with(obj_player) {
     <instance objName="obj_save" x="160" y="416" name="inst_1AA74FC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="-32" y="288" name="inst_9496BA79" locked="0" code="per=4+2+1;&#xA;type=0; rx=2800-16; ry=-1;&#xA;GOTO=rmstageFinal1;" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="1568" y="288" name="inst_2545E3B4" locked="0" code="per=4+2+1;&#xA;type=0; rx=16; ry=-1;&#xA;GOTO=rmstageFinal2;&#xA;&#xA;&#xA;if sys_global.orb[2] instance_destroy();&#xA;" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_light2" x="304" y="-192" name="inst_2345820D" locked="0" code="" scaleX="6" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="obj_light2" x="304" y="-224" name="inst_2345820D" locked="0" code="" scaleX="6" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="288" y="416" name="inst_418CF1DA" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sealedstone" x="368" y="224" name="inst_90C1954C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sealedstone" x="398" y="228" name="inst_B10C6432" locked="0" code="image_index=1;&#xA;instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="419" y="256" name="inst_87260510" locked="0" code="image_index=2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="350" y="247" name="inst_4F2063D3" locked="0" code="image_index=3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="377" y="267" name="inst_29CF166C" locked="0" code="image_index=4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="352" y="288" name="inst_D514C759" locked="0" code="image_index=5;&#xA;instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="378" y="305" name="inst_B757AB62" locked="0" code="image_index=6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="413" y="295" name="inst_AE594B8E" locked="0" code="image_index=7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="419" y="256" name="inst_87260510" locked="0" code="image_index=2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="350" y="247" name="inst_4F2063D3" locked="0" code="image_index=3;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="377" y="267" name="inst_29CF166C" locked="0" code="image_index=4;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="352" y="288" name="inst_D514C759" locked="0" code="image_index=5;&#xA;instance_destroy();" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="378" y="305" name="inst_B757AB62" locked="0" code="image_index=6;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="413" y="295" name="inst_AE594B8E" locked="0" code="image_index=7;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="800" y="0" name="inst_A3804775" locked="0" code="" scaleX="10" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="800" y="448" name="inst_CB8817D3" locked="0" code="" scaleX="10" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_light" x="1088" y="368" name="inst_55165076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

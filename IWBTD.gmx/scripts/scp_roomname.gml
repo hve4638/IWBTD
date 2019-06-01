@@ -31,6 +31,12 @@ case rmstage05c:
 case rmstage05d:
 case rmstage05e:
 case rmboss05:
+case rmstage06a:
+case rmstage06b:
+case rmstage06c:
+case rmstage06d:
+case rmstage06e:
+case rmboss06:
     return es('stage','5');
 
 case rmstageFinal0:

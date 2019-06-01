@@ -52,11 +52,11 @@
   </views>
   <instances>
     <instance objName="sys_cam" x="416" y="2496" name="inst_4CFA219D" locked="0" code="target=obj_fakeplayer;&#xA;type=4;&#xA;mx=800; my=608;&#xA;ymin = 1664;&#xA;if instance_exists(Me)&#xA;{&#xA;    x = Me.x;&#xA;    y = Me.y;&#xA;    rx= Me.x - 400;&#xA;    ry= Me.y - 304;&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="sys_lighting" x="352" y="2560" name="inst_586701DC" locked="0" code="val = 60 div 8 * 7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="sys_lighting" x="384" y="2560" name="inst_2B14117D" locked="0" code="val = 110 div 8 * 7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="sys_lighting" x="352" y="2560" name="inst_586701DC" locked="0" code="val = 60;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="sys_lighting" x="384" y="2560" name="inst_2B14117D" locked="0" code="val = 110;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_create" x="504" y="2679" name="inst_19E02D6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="sys_tiletoblock" x="352" y="2496" name="inst_253B2501" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_save" x="736" y="2656" name="inst_A37A7EB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_save" x="1984" y="2432" name="inst_A37A7EB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_noone" x="480" y="2608" name="inst_C1C8E96D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_more" x="1728" y="2464" name="inst_ED178835" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_more" x="1824" y="2464" name="inst_D222216E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -3111,6 +3111,7 @@
     <instance objName="obj_block_tower" x="7808" y="2560" name="inst_D4959A81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_tower" x="7904" y="2560" name="inst_8ADF0C89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_tower" x="7840" y="2560" name="inst_5C5F0E99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger" x="6512" y="1968" name="inst_30E8F7B7" locked="0" code="cs = 56;&#xA;c_goto = rmstage06e;" scaleX="2" scaleY="3.61290311813354" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile06" x="1184" y="2624" w="32" h="32" xo="0" yo="64" id="10090723" name="inst_109959FC" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

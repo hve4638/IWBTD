@@ -22,7 +22,6 @@
             <string>fade_get=0.1;
 with(Me) depth=-16;
 
-ARMOR=0;
 front=1;
 oncurse=1;
 ondark=0;

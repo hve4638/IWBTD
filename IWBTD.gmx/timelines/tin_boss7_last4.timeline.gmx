@@ -19,9 +19,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var j=32;
+            <string>///Reina Pattern
+var j=32;
 for(var i=0;i&lt;4;i++) {
-    t_arr[i]=instance_create(400,-j,obj_whitechunk);
+    t_arr[i]=instance_create(400,-j-32,obj_whitechunk);
     with(t_arr[i]) {direction=270; movspd=1; movang=16;}
     j+=6;
 }
@@ -60,7 +61,7 @@ with(t_arr[1]) {direction=180; x-=8;}
 with(t_arr[2]) {direction=0;}
 with(t_arr[3]) {direction=0; x+=8;}
 with(obj_whitechunk) {
-    x=400; y=448+16;
+    x=400; y=448+16-32;
     speed=0; movang=16;
     maxspd=11.5; movspd=0.2;
     max_x=800;
@@ -96,8 +97,8 @@ timeline_position=1000;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if t_i &lt; 15 instance_create(Me.x div 64 * 64+32 + irandom_range(-48,48)*(t_i mod 2),448,obj_warning_meteo);
-else instance_create(Me.x div 64 * 64+32,448,obj_warning_meteo);
+            <string>if t_i &lt; 15 instance_create(Me.x div 64 * 64+32 + irandom_range(-48,48)*(t_i mod 2),448-32,obj_warning_meteo);
+else instance_create(Me.x div 64 * 64+32,448-32,obj_warning_meteo);
 
 if t_i++&lt;18 {
     if t_i==1 {onknife=false;}
