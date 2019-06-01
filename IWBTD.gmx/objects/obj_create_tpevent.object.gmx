@@ -104,7 +104,7 @@ with(sys_part){
           <argument>
             <kind>1</kind>
             <string>if instance_exists(obj_player) instance_destroy();
-alarm[0]=75;
+alarm[0]=40;
 EFFECT=true;
 </string>
           </argument>

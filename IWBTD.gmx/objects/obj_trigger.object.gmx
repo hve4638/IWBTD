@@ -1023,8 +1023,6 @@ switch(cs)
         }
         with(sys_cam)
         {
-            x += other.c_tox;
-            y += other.c_toy;
             rx += other.c_tox;
             ry += other.c_toy;
         }
@@ -1103,35 +1101,35 @@ switch(cs)
             }
         }
         
-        if ps == 120
+        if ps == 60
         {
             with(obj_sealedstone)
             {
-                if scp_follow(obj_event_vampire.x,obj_event_vampire.y,15)&lt;32
+                if scp_follow(obj_event_vampire.x,obj_event_vampire.y,20)&lt;32
                 {
                     instance_destroy();
                 }
-                other.ps = 119;
+                other.ps = 59;
             }
         }
-        else if ps == 121
-            ps = 240;
+        else if ps == 61
+            ps = 210;
             
-        if ps==270 {
+        if ps==250 {
             with(obj_event_vampire) {
                 var i=instance_create(x,y,obj_banjak);
                 i.image_xscale=0; i.image_yscale=0;
                 i.movxsc=0.2; i.movysc=0.2;
             }
         }
-        else if ps==285 with(obj_banjak) {movxsc=2.5; movysc=2.5;}
-        else if ps==340 scp_sfx(snd_Explode3,3);
-        else if ps==355 {
+        else if ps==265 with(obj_banjak) {movxsc=2.5; movysc=2.5;}
+        else if ps==290 scp_sfx(snd_Explode3,3);
+        else if ps==310 {
             persistent=1;
         }
-        else if ps==356 {
+        else if ps==311 {
             room_goto(rmboss06);
-        } else if ps==357 {
+        } else if ps==312 {
             cansave=1;
             ongod = false;
             with(sys_cam) {fade_set=1; fade_get=-0.01; fade_col=c_white;}
@@ -1140,6 +1138,49 @@ switch(cs)
             instance_destroy();
         }
     
+    } break;
+    
+    case 60:
+    {
+        if ps&lt;40
+        {
+            On=false;
+        }
+        else
+        {
+            if ps==40
+            {
+                ongod=true;
+                with(obj_player) frozen = true;
+                with(sys_cam) {
+                    fade_get=0.02;
+                    fade_col=c_black;
+                }
+                audio_sound_gain(perbgm,0,2000);
+            }
+            else if ps==170
+            {
+                persistent = 1;
+            }
+            else if ps==171
+            {
+                room_goto(c_goto);
+            }
+            else if ps==172
+            {
+                with(obj_player)
+                {
+                    scp_save(x,y,room);
+                }
+                ongod=false;
+                with(sys_cam) {
+                    fade_set = 1;
+                    fade_get = -0.01;
+                    fade_col=c_black;
+                }
+                instance_destroy();
+            }
+        }
     } break;
 }
 

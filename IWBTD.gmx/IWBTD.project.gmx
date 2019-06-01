@@ -834,6 +834,7 @@
     <room>rooms\title</room>
     <room>rooms\test</room>
     <room>rooms\rmteleport</room>
+    <room>rooms\rmteleport2</room>
     <rooms name="Stage1">
       <room>rooms\rmstage01a</room>
       <room>rooms\rmboss1</room>
@@ -894,7 +895,6 @@
     <rooms name="Secret Boss">
       <room>rooms\rmSCboss4</room>
     </rooms>
-    <room>rooms\rmsin2</room>
     <rooms name="Stage6">
       <room>rooms\rmstage06a</room>
       <room>rooms\rmstage06b</room>
@@ -904,6 +904,7 @@
       <room>rooms\rmsin4</room>
       <room>rooms\rmboss06</room>
     </rooms>
+    <room>rooms\rmsin2</room>
     <room>rooms\rmstage06</room>
     <room>rooms\rmsin2_old</room>
     <room>rooms\rmlastready</room>

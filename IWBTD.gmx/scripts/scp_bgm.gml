@@ -60,6 +60,7 @@ case rmboss1b:
 case rmboss02:
 case rmstage04d:
 case rmstage05e:
+case rmstage06e:
 case rmsin2:
     nbgm=noone;
     break;
