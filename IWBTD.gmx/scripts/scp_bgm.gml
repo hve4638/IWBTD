@@ -51,6 +51,7 @@ case rmstageFinal0:
     loop = 0;
     break;
 case rmteleport:
+case rmteleport2:
     nbgm = snd_TpRoom;
     loop = 1;
     break;

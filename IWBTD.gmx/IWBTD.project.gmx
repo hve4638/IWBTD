@@ -835,6 +835,7 @@
     <room>rooms\test</room>
     <room>rooms\rmteleport</room>
     <room>rooms\rmteleport2</room>
+    <room>rooms\rmaltar</room>
     <rooms name="Stage1">
       <room>rooms\rmstage01a</room>
       <room>rooms\rmboss1</room>
