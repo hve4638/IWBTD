@@ -561,7 +561,7 @@ with(obj_danmaku) {
             <string>///Debug
 if cheat {
     if keyboard_check_pressed(ord('K')) {
-        phase=3; HP=30;
+        phase=4; HP=30;
     }
 }
 </string>

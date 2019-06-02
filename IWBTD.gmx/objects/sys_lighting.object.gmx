@@ -84,7 +84,7 @@ draw_rectangle(0,0,view_wview,view_wview,false);
 surface_reset_target();
 
 if mouse {
-    scp_light(mouse_x,mouse_y,256);
+    scp_light(mouse_x,mouse_y,256+128);
     //if sys_global.light_mouse 
     //if mouse_check_button_pressed(mb_left) sys_global.light_mouse=!sys_global.light_mouse;
 }

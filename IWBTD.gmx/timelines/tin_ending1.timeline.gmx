@@ -357,7 +357,7 @@ fade_get=-0.02;
     </event>
   </entry>
   <entry>
-    <step>1905</step>
+    <step>1900</step>
     <event>
       <action>
         <libid>1</libid>
@@ -376,7 +376,7 @@ fade_get=-0.02;
           <argument>
             <kind>1</kind>
             <string>///fade
-fade_get=0.02;
+fade_get=0.01;
 </string>
           </argument>
         </arguments>
@@ -384,7 +384,7 @@ fade_get=0.02;
     </event>
   </entry>
   <entry>
-    <step>1955</step>
+    <step>2000</step>
     <event>
       <action>
         <libid>1</libid>

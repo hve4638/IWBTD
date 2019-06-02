@@ -216,7 +216,7 @@ switch(sprite_index)
           <argument>
             <kind>1</kind>
             <string>///Lighting
-if room!=rmstage05e &amp;&amp; room!=rmboss05 &amp;&amp; room!=rmending7 &amp;&amp; room!=rmsin2 scp_light(x,y,96+16);
+if room!=rmstage05e &amp;&amp; room!=rmboss05 &amp;&amp; room!=rmending7 &amp;&amp; room!=rmsin2 scp_light(x,y,96+48);
 </string>
           </argument>
         </arguments>

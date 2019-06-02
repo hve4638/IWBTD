@@ -24,7 +24,7 @@ sprite_index=spr_reaper;
 image_index=0;
 image_speed=0;
 
-onreaper=1;
+//onreaper=1;
 
 t_i=0;
 </string>
@@ -52,7 +52,7 @@ t_i=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(obj_sealedstone) {
+            <string>/*with(obj_sealedstone) {
     var i=instance_create(x+irandom_range(-150,150),y+irandom_range(-100,100),obj_dust);
     i.target=id; i.sprite_index=spr_darkdust;
 }
@@ -62,7 +62,7 @@ with(sys_part) {
     if ++prt[46]==0 event_user(0);
     part_emitter_region(Sys[46],emitter[46],obj_sealedstone.x+14,obj_sealedstone.x-14,obj_sealedstone.y+12,obj_sealedstone.y-12,1,1);
     part_emitter_burst(Sys[46],emitter[46],particle[46],min((other.t_i-60) div 10,5));
-}
+}*/
 </string>
           </argument>
         </arguments>
@@ -114,18 +114,18 @@ if 50==t_i {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(obj_sealedstone) {
+            <string>/*with(obj_sealedstone) {
     var i=instance_create(x+irandom_range(-150,150),y+irandom_range(-100,100),obj_dust);
     i.target=id; i.sprite_index=spr_darkdust;
-}
-
+}*/
+/*
 if 60&lt;t_i {
     with(sys_part) {
         if ++prt[46]==0 event_user(0);
         part_emitter_region(Sys[46],emitter[46],obj_sealedstone.x+14,obj_sealedstone.x-14,obj_sealedstone.y+12,obj_sealedstone.y-12,1,1);
         part_emitter_burst(Sys[46],emitter[46],particle[46],min((other.t_i-60) div 10,5));
     }
-}
+}*/
 
 t_i++;
 timeline_position--;

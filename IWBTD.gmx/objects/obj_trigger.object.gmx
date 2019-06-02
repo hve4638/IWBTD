@@ -1183,7 +1183,6 @@ switch(cs)
         }
     } break;
     
-    
     case 61:
     {
         if ps&lt;20
@@ -1229,9 +1228,88 @@ switch(cs)
             }
         }
     } break;
+    
+    case 62:
+    {
+        if 0&lt;=ps &amp;&amp; ps&lt;10 {
+            ongod = true;
+            with(obj_player) {
+                frozen=true;
+                INDEX=spr_PlayerRunning;
+                INDEX_SPEED=0.2;
+                adhspd=2.5;
+                //x+=2.5;
+            }
+        }
+        
+        if ps==10 {
+            with(sys_cam) {fade_get=0.02;}
+            persistent=1;
+        } else if ps==80 {
+            room_goto(rmteleport);
+        } else if ps==81 {
+            if instance_exists(obj_player)
+            {
+                obj_player.x = 336;
+                obj_player.y = 375;
+            }
+            else
+                instance_create(336,375,obj_player);
+            with(sys_cam) {fade_set=1; fade_get=-0.01;}
+            cansave=true;
+            ongod=false;
+            instance_destroy();
+        }
+    } break;
+    
+    case 63:
+    {
+        if ps&lt;20
+        {
+            On=false;
+        }
+        else
+        {
+            if ps==20
+            {
+                with(obj_player) frozen = true;
+                with(sys_cam) {
+                    fade_get=0.05;
+                    fade_col=c_black;
+                }
+                audio_sound_gain(perbgm,0,2000);
+            }
+            else if ps==120
+            {
+                persistent = 1;
+            }
+            else if ps==121
+            {
+                room_goto(c_goto);
+            }
+            else if ps==122
+            {
+                if instance_exists(obj_player)
+                {
+                    obj_player.x = c_x;
+                    obj_player.y = c_y;
+                }
+                else
+                    instance_create(c_x,c_y,obj_player);
+                obj_player.xScale = -1;
+                    
+                with(sys_cam) {
+                    fade_set = 1;
+                    fade_get = -0.01;
+                    fade_col=c_black;
+                    rx = obj_player.x - 400;
+                    ry = obj_player.y - 306;
+                }
+                instance_destroy();
+            }
+        }
+    } break;
 }
-
-
 </string>
           </argument>
         </arguments>

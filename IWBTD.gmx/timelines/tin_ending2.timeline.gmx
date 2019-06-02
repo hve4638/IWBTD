@@ -19,8 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>onfire=true;
-path_start(path2,3,0,0);
+            <string>//onfire=true;
+//path_start(path2,3,0,0);
 </string>
           </argument>
         </arguments>
@@ -46,14 +46,14 @@ path_start(path2,3,0,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>path_end();
+            <string>//path_end();
 onfire=0;
 onignis=1;
 cntignis=5;
 
-sprite_index=spr_ignis_event;
+sprite_index=spr_ignis;
 image_index=0; image_speed=0; image_xscale=-1; image_alpha=0;
-x=680; y=465;
+
 </string>
           </argument>
         </arguments>
@@ -139,7 +139,7 @@ cntignis=max(1,cntignis-1);
             <kind>1</kind>
             <string>///credit
 dimage=0;
-dx=702; dy=384+32;
+dx=896; dy=384;
 dmovalp=0.06;
 </string>
           </argument>

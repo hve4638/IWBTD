@@ -63,6 +63,7 @@ case rmstage04d:
 case rmstage05e:
 case rmstage06e:
 case rmsin2:
+case rmaltar:
     nbgm=noone;
     break;
 default:

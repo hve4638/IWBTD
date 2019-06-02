@@ -148,7 +148,7 @@ result_death=death;
             <kind>1</kind>
             <string>///save
 cantp=true;
-scp_save(580,407,rmteleport);
+scp_save(580,407-32,rmteleport);
 </string>
           </argument>
         </arguments>
@@ -198,8 +198,8 @@ scp_save(580,407,rmteleport);
 talpha=clamp(talpha+tmovalp,0,1);
 if isend {
     palpha=clamp(palpha+0.002,0,1);
-    if keyboard_check_pressed(tpbutton) {
-        room_goto(rmteleport);
+    if keyboard_check_pressed(vk_anykey) {
+        room_goto(rmaltar);
         instance_destroy();
     }
 }
