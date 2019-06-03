@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Set
-N=60;
+N=70;
 for(var i=1;i&lt;=N;i++) prt[i]=-1;
 
 //if ++prt[22]==0 event_user(0);
@@ -2645,6 +2645,215 @@ if prt[60]==0 {
     emitter[60] = part_emitter_create(Sys[60]);
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///61. Ignis Soul
+if prt[61]==0 {
+    Sys[61]=part_system_create();
+    particle[61] = part_type_create();
+    part_type_shape(particle[61],pt_shape_cloud);
+    part_type_size(particle[61],0.10,0.10,0,0);
+    part_type_scale(particle[61],1.50,1.50);
+    part_type_color2(particle[61],87,0);
+    part_type_alpha2(particle[61],0.1,0);
+    part_type_speed(particle[61],0.15,0.20,0,0);
+    part_type_direction(particle[61],0,359,0,0);
+    part_type_gravity(particle[61],0.03,90);
+    part_type_orientation(particle[61],0,0,0,0,1);
+    part_type_blend(particle[61],1);
+    part_type_life(particle[61],60,60);
+    emitter[61] = part_emitter_create(Sys[61]);
+}
+/*
+part_emitter_region(Sys[61],emitter[61],10,-10,16,-16,1,1);
+part_emitter_stream(Sys[61],emitter[61],particle[61],5);
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///62. Karena Soul
+if prt[62]==0 {
+    Sys[62]=part_system_create();
+    particle[62] = part_type_create();
+    part_type_shape(particle[62],pt_shape_sphere);
+    part_type_size(particle[62],0.10,0.10,0,0);
+    part_type_scale(particle[62],1.50,1.50);
+    part_type_color2(particle[62],8388736,0);
+    part_type_alpha2(particle[62],0.08,0);
+    part_type_speed(particle[62],0.15,0.20,0,0);
+    part_type_direction(particle[62],0,359,0,0);
+    part_type_gravity(particle[62],0.03,90);
+    part_type_orientation(particle[62],0,0,0,0,1);
+    part_type_blend(particle[62],0);
+    part_type_life(particle[62],60,60);
+    emitter[62] = part_emitter_create(Sys[62]);
+}
+/*
+part_emitter_region(Sys[62],emitter[62],10,-10,16,-16,1,1);
+part_emitter_stream(Sys[62],emitter[62],particle[62],5);
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///63. Aqua Soul
+if prt[63]==0 {
+    Sys[63]=part_system_create();
+    particle[63] = part_type_create();
+    part_type_shape(particle[63],pt_shape_cloud);
+    part_type_size(particle[63],0.10,0.10,0,0);
+    part_type_scale(particle[63],1.50,1.50);
+    part_type_color2(particle[63],5701632,0);
+    part_type_alpha2(particle[63],0.30,0);
+    part_type_speed(particle[63],0.15,0.20,0,0);
+    part_type_direction(particle[63],0,359,0,0);
+    part_type_gravity(particle[63],0.03,90);
+    part_type_orientation(particle[63],0,0,0,0,1);
+    part_type_blend(particle[63],1);
+    part_type_life(particle[63],60,60);
+    emitter[63] = part_emitter_create(Sys[63]);
+
+}
+/*
+part_emitter_region(Sys[63],emitter[63],10,-10,16,-16,1,1);
+part_emitter_stream(Sys[63],emitter[63],particle[63],5);
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///64. Reina Soul
+if prt[64]==0 {
+    Sys[64]=part_system_create();
+    particle[64] = part_type_create();
+    part_type_shape(particle[64],pt_shape_cloud);
+    part_type_size(particle[64],0.10,0.10,0,0);
+    part_type_scale(particle[64],1.50,1.50);
+    part_type_color2(particle[64],16744448,0);
+    part_type_alpha2(particle[64],0.10,0);
+    part_type_speed(particle[64],0.15,0.20,0,0);
+    part_type_direction(particle[64],0,359,0,0);
+    part_type_gravity(particle[64],0.03,90);
+    part_type_orientation(particle[64],0,0,0,0,1);
+    part_type_blend(particle[64],1);
+    part_type_life(particle[64],60,60);
+    emitter[64] = part_emitter_create(Sys[64]);
+
+}
+/*
+part_emitter_region(Sys[64],emitter[64],10,-10,16,-16,1,1);
+part_emitter_stream(Sys[64],emitter[64],particle[64],5);
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///65. Valencia Soul
+if prt[65]==0 {
+    Sys[65]=part_system_create();
+    particle[65] = part_type_create();
+    part_type_shape(particle[65],pt_shape_explosion);
+    part_type_size(particle[65],0.10,0.10,0,0);
+    part_type_scale(particle[65],1.50,1.50);
+    part_type_color2(particle[65],128,0);
+    part_type_alpha2(particle[65],0.30,0);
+    part_type_speed(particle[65],0.15,0.20,0,0);
+    part_type_direction(particle[65],0,359,0,0);
+    part_type_gravity(particle[65],0.03,90);
+    part_type_orientation(particle[65],0,0,0,0,1);
+    part_type_blend(particle[65],0);
+    part_type_life(particle[65],60,60);
+    emitter[65] = part_emitter_create(Sys[65]);
+}
+
+
+/*
+    part_emitter_region(Sys[65],emitter[65],10,-10,16,-16,1,1);
+    part_emitter_stream(Sys[65],emitter[65],particle[65],5);
+*/
 </string>
           </argument>
         </arguments>

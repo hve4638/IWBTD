@@ -1231,6 +1231,9 @@ switch(cs)
     
     case 62:
     {
+        if ps==0 
+            audio_sound_gain(perbgm,0,1000);
+            
         if 0&lt;=ps &amp;&amp; ps&lt;10 {
             ongod = true;
             with(obj_player) {

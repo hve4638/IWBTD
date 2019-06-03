@@ -54,21 +54,25 @@
     <instance objName="sys_lighting" x="32" y="0" name="inst_078B342E" locked="0" code="val=30;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="0" y="384" name="inst_580190CF" locked="0" code="" scaleX="41" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="sys_cam" x="0" y="0" name="inst_0AE276C4" locked="0" code="target=obj_fakeplayer;&#xA;MX=4;&#xA;type=4;&#xA;mx=800; my=608;&#xA;&#xA;if instance_exists(Me)&#xA;{&#xA;    rx=Me.x-400;&#xA;    ry=Me.y-304;&#xA;}&#xA;&#xA;tx = 480;&#xA;ty = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="477" y="231" name="inst_56DC767C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="500" y="234" name="inst_894655AA" locked="0" code="image_index=1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="462" y="251" name="inst_19FFCC10" locked="0" code="image_index=3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="484" y="261" name="inst_1FEECB16" locked="0" code="image_index=4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="519" y="248" name="inst_0FFE905B" locked="0" code="image_index=2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="465" y="278" name="inst_9FA70232" locked="0" code="image_index=5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="486" y="290" name="inst_25B8DE79" locked="0" code="image_index=6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sealedstone" x="512" y="281" name="inst_8A0BA339" locked="0" code="image_index=7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="477" y="231" name="inst_56DC767C" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="500" y="234" name="inst_894655AA" locked="-1" code="image_index=1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="462" y="251" name="inst_19FFCC10" locked="-1" code="image_index=3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="484" y="261" name="inst_1FEECB16" locked="-1" code="image_index=4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="519" y="248" name="inst_0FFE905B" locked="-1" code="image_index=2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="465" y="278" name="inst_9FA70232" locked="-1" code="image_index=5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="486" y="290" name="inst_25B8DE79" locked="-1" code="image_index=6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sealedstone" x="512" y="281" name="inst_8A0BA339" locked="-1" code="image_index=7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_create" x="172" y="372" name="inst_A07C865A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="sys_lighting" x="64" y="0" name="inst_7A7946A0" locked="0" code="val = 55;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="320" y="-256" name="inst_1137980B" locked="0" code="cs = CS_CAMTYPE;&#xA;c_type = 3;&#xA;c_xmin = 0;&#xA;c_xmax = room_width - 400;&#xA;c_ymin = 0;&#xA;c_ymax = room_height - 306;&#xA;" scaleX="11" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="704" y="-224" name="inst_52E58E1D" locked="0" code="cs = CS_CAMTYPE;&#xA;c_type = 4;&#xA;c_xmin = 0;&#xA;c_xmax = room_width - 400;&#xA;c_ymin = 0;&#xA;c_ymax = room_height - 306;&#xA;" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="256" y="-224" name="inst_617AAD4F" locked="0" code="cs = CS_CAMTYPE;&#xA;c_type = 4;&#xA;c_xmin = 0;&#xA;c_xmax = room_width - 400;&#xA;c_ymin = 0;&#xA;c_ymax = room_height - 306;&#xA;" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger" x="1052" y="32" name="inst_935668EF" locked="0" code="cs = 62;&#xA;" scaleX="2" scaleY="11" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger" x="1052" y="32" name="inst_935668EF" locked="0" code="cs = 62;" scaleX="2" scaleY="11" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-32" y="-32" name="inst_FF3BE33F" locked="0" code="" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
+    <instance objName="obj_soul" x="416" y="256" name="inst_BC0FF957" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_soul" x="544" y="256" name="inst_8CA4082A" locked="0" code="IDX = 62;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_soul" x="480" y="288" name="inst_1E01322C" locked="0" code="IDX = 63;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_soul" x="512" y="288" name="inst_055B2699" locked="0" code="IDX= 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile12" x="1024" y="352" w="32" h="32" xo="0" yo="0" id="10097129" name="inst_769E909A" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

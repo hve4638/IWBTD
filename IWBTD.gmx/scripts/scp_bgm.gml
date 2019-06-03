@@ -55,7 +55,11 @@ case rmteleport2:
     nbgm = snd_TpRoom;
     loop = 1;
     break;
-
+case rmaltar:
+    nbgm = snd_altarwind;
+    loop = 1;
+    break;
+    
 case test:
 case rmboss1b:
 case rmboss02:
@@ -63,7 +67,6 @@ case rmstage04d:
 case rmstage05e:
 case rmstage06e:
 case rmsin2:
-case rmaltar:
     nbgm=noone;
     break;
 default:

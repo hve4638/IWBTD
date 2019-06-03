@@ -74,6 +74,7 @@
     <sound>sound\snd_TpRoom</sound>
     <sound>sound\snd_hiddenBoss4</sound>
     <sound>sound\snd_Stage6</sound>
+    <sound>sound\snd_altarwind</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -712,6 +713,7 @@
     <object>objects\sys_tiletoblock</object>
     <object>objects\obj_noone</object>
     <object>objects\obj_towerbackground</object>
+    <object>objects\obj_soul</object>
   </objects>
   <timelines name="timelines">
     <timelines name="boss_golem">

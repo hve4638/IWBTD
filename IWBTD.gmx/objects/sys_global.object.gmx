@@ -474,6 +474,7 @@ if room==Init
 || room==rmending5
 || room==rmending6
 || room==rmending7
+|| room==rmaltar
 || !uiset {onui=false;}
 else {onui=true;}
 </string>
