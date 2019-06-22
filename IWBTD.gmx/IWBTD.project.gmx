@@ -151,16 +151,12 @@
       <sprite>sprites\spr_temp_sprite</sprite>
       <sprite>sprites\spr_ignis</sprite>
       <sprite>sprites\spr_ignis_event</sprite>
-      <sprite>sprites\sprite153</sprite>
       <sprite>sprites\spr_reaper</sprite>
       <sprite>sprites\spr_aqua</sprite>
       <sprite>sprites\spr_ribra</sprite>
       <sprite>sprites\sprite181</sprite>
-      <sprite>sprites\sprite69</sprite>
-      <sprite>sprites\sprite66</sprite>
       <sprite>sprites\spr_witch</sprite>
       <sprite>sprites\spr_mage</sprite>
-      <sprite>sprites\sprite64</sprite>
       <sprite>sprites\spr_witch_after</sprite>
       <sprite>sprites\spr_sorcerer</sprite>
       <sprite>sprites\spr_sorcerer_echo</sprite>
@@ -326,6 +322,17 @@
     <sprite>sprites\spr_portcullis</sprite>
     <sprite>sprites\spr_block_tower</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\sprite203</sprite>
+    <sprite>sprites\spr_dimensionaura</sprite>
+    <sprite>sprites\spr_whiteblock</sprite>
+    <sprite>sprites\spr_enemybullet</sprite>
+    <sprite>sprites\spr_grenade</sprite>
+    <sprites name="Dimension_kid">
+      <sprite>sprites\spr_dimensionkid</sprite>
+      <sprite>sprites\spr_dimensionkid_run</sprite>
+      <sprite>sprites\spr_dimensionkid_jump</sprite>
+      <sprite>sprites\spr_dimensionkid_fall</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Background">
@@ -468,6 +475,10 @@
     <shader type="GLSLES">shaders\sh_basic.shader</shader>
     <shader type="GLSLES">shaders\shader3.shader</shader>
     <shader type="GLSLES">shaders\sh_tower.shader</shader>
+    <shader type="GLSLES">shaders\sh_removeblack.shader</shader>
+    <shader type="GLSLES">shaders\sh_removewhite.shader</shader>
+    <shader type="GLSLES">shaders\sh_white.shader</shader>
+    <shader type="GLSLES">shaders\sh_black.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\Font0</font>
@@ -526,6 +537,7 @@
         <object>objects\obj_vampair_old</object>
       </objects>
       <object>objects\tmp_boss</object>
+      <object>objects\obj_dimension</object>
       <object>objects\obj_golem</object>
       <object>objects\obj_golem_part</object>
       <object>objects\obj_ignis</object>
@@ -536,6 +548,7 @@
       <object>objects\obj_witch</object>
       <object>objects\obj_sorcerer</object>
       <object>objects\obj_vampair</object>
+      <object>objects\obj_karena</object>
     </objects>
     <objects name="Spike">
       <objects name="spike">
@@ -694,9 +707,8 @@
       <object>objects\obj_fadegener</object>
       <object>objects\obj_dimensionparticle</object>
     </objects>
-    <object>objects\obj_karena</object>
     <object>objects\sys_part</object>
-    <object>objects\obj_dimension</object>
+    <object>objects\obj_dimension_unused</object>
     <object>objects\obj_event_ending</object>
     <object>objects\obj_event_boss</object>
     <object>objects\obj_rock</object>
@@ -714,6 +726,11 @@
     <object>objects\obj_noone</object>
     <object>objects\obj_towerbackground</object>
     <object>objects\obj_soul</object>
+    <object>objects\obj_dimensionkidform</object>
+    <object>objects\obj_dimensionbossform</object>
+    <object>objects\obj_dimensionblock</object>
+    <object>objects\obj_enemybullet</object>
+    <object>objects\obj_grenade</object>
   </objects>
   <timelines name="timelines">
     <timelines name="boss_golem">
@@ -830,14 +847,16 @@
     <timeline>timelines\timeline55</timeline>
     <timeline>timelines\tin_bossL5</timeline>
     <timeline>timelines\tin_boss7_lastready</timeline>
+    <timeline>timelines\tin_bossd1</timeline>
+    <timeline>timelines\tin_bossd2</timeline>
+    <timeline>timelines\tin_bossd3</timeline>
+    <timeline>timelines\tin_dimension1a</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Init</room>
     <room>rooms\title</room>
     <room>rooms\test</room>
     <room>rooms\rmteleport</room>
-    <room>rooms\rmteleport2</room>
-    <room>rooms\rmaltar</room>
     <rooms name="Stage1">
       <room>rooms\rmstage01a</room>
       <room>rooms\rmboss1</room>
@@ -898,7 +917,7 @@
     <rooms name="Secret Boss">
       <room>rooms\rmSCboss4</room>
     </rooms>
-    <rooms name="Stage6">
+    <rooms name="Stage5_New">
       <room>rooms\rmstage06a</room>
       <room>rooms\rmstage06b</room>
       <room>rooms\rmstage06c</room>
@@ -908,6 +927,9 @@
       <room>rooms\rmboss06</room>
       <room>rooms\rmsin2__</room>
     </rooms>
+    <room>rooms\rmbosslast</room>
+    <room>rooms\rmaltar</room>
+    <room>rooms\rmteleport2</room>
     <room>rooms\rmsin2</room>
     <room>rooms\rmstage06</room>
     <room>rooms\rmsin2_old</room>
@@ -917,7 +939,6 @@
     <room>rooms\room48</room>
     <room>rooms\rmlastboss</room>
     <room>rooms\rmbossEx</room>
-    <room>rooms\endingboss</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -440,7 +440,7 @@ if onhealth {
     vy=view_yview;
     
     if HP!=drawhp {
-     if abs(drawhp-HP)&lt;0.5 {drawhp=HP;}
+     //if abs(drawhp-HP)&lt;0.5 {drawhp=HP;}
      drawhp+=(HP-drawhp)/10;
     }
     _p=739*(drawhp/MAXHP);

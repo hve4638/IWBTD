@@ -56,7 +56,7 @@
     <instance objName="obj_block" x="800" y="0" name="inst_5CDC1DFD" locked="-1" code="" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-32" y="-32" name="inst_518D8851" locked="-1" code="" scaleX="27" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_create" x="389" y="433" name="inst_3215F6AA" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dimension" x="400" y="288" name="inst_191706E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dimension_unused" x="400" y="288" name="inst_191706E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dimensionstart" x="32" y="0" name="inst_3FF74311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

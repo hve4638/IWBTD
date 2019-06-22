@@ -57,7 +57,7 @@ FUSE=30;
         if ++prt[16]==0 event_user(0);
         part_type_color1(particle[16],128);
         part_system_depth(Sys[16],1);
-        part_emitter_region(Sys[16],emitter[16],other.x-8,other.x+8,other.y-4,other.y,1,1);
+        part_emitter_region(Sys[16],emitter[16],other.x-9,other.x+9,other.y-4,other.y,1,1);
         part_emitter_burst(Sys[16],emitter[16],particle[16],5);
     }
 }

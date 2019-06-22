@@ -20,8 +20,11 @@ with(sys_global) {
     SWITCH[0] = tmpmap[? "switch0"]
     
     with(obj_player) instance_destroy();
-    instance_create(tx,ty,obj_player);
-    with(obj_player) {persistent=1; FLIP=tflip;}
+    if !(tx==-1 && ty==-1)
+    {
+        instance_create(tx,ty,obj_player);
+        with(obj_player) {persistent=1; FLIP=tflip;}
+    }
 
     cansave=true;
     room_goto(troom);

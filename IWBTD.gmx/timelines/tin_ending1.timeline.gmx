@@ -164,7 +164,7 @@ dmovalp=0.01;
     </event>
   </entry>
   <entry>
-    <step>760</step>
+    <step>710</step>
     <event>
       <action>
         <libid>1</libid>
@@ -191,7 +191,7 @@ dmovalp=-0.01;
     </event>
   </entry>
   <entry>
-    <step>860</step>
+    <step>810</step>
     <event>
       <action>
         <libid>1</libid>
@@ -209,7 +209,8 @@ dmovalp=-0.01;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dsprite=spr_credit; dimage=2;
+            <string>///music credit
+dsprite=spr_credit; dimage=2;
 dmovalp=0.01;
 </string>
           </argument>
@@ -218,7 +219,7 @@ dmovalp=0.01;
     </event>
   </entry>
   <entry>
-    <step>1050</step>
+    <step>1025</step>
     <event>
       <action>
         <libid>1</libid>
@@ -245,7 +246,7 @@ dmovalp=-0.01;
     </event>
   </entry>
   <entry>
-    <step>1150</step>
+    <step>1125</step>
     <event>
       <action>
         <libid>1</libid>
@@ -263,7 +264,8 @@ dmovalp=-0.01;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dsprite=spr_credit; dimage=3;
+            <string>///music credit2
+dsprite=spr_credit; dimage=3;
 dmovalp=0.01;
 </string>
           </argument>
@@ -357,7 +359,7 @@ fade_get=-0.02;
     </event>
   </entry>
   <entry>
-    <step>1900</step>
+    <step>1950</step>
     <event>
       <action>
         <libid>1</libid>
@@ -384,7 +386,7 @@ fade_get=0.01;
     </event>
   </entry>
   <entry>
-    <step>2000</step>
+    <step>2100</step>
     <event>
       <action>
         <libid>1</libid>

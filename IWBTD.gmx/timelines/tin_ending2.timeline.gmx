@@ -139,7 +139,7 @@ cntignis=max(1,cntignis-1);
             <kind>1</kind>
             <string>///credit
 dimage=0;
-dx=896; dy=384;
+dx=960; dy=384;
 dmovalp=0.06;
 </string>
           </argument>

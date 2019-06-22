@@ -312,6 +312,9 @@
     <instance objName="obj_spike" x="1120" y="1088" name="inst_B744AB0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water3" x="1088" y="1088" name="inst_1097D5E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water3" x="1120" y="1088" name="inst_8EEEF937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_save_wuss" x="448" y="928" name="inst_23471B64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_platform" x="416" y="960" name="inst_F9AF4BC7" locked="0" code="if !wuss instance_destroy();&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_save_wuss" x="1824" y="736" name="inst_E7689332" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile06" x="2592" y="736" w="32" h="32" xo="64" yo="32" id="10089206" name="inst_215B9FE8" depth="2000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

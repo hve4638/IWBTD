@@ -70,10 +70,10 @@ dimage=0;
 if onmov {
     direction=90;
     if D {
-        if 0.2&lt;speed {D=!D;} speed+=0.01;
+        if 0.1&lt;speed {D=!D;} speed+=0.01;
     }
     else {
-        if speed&lt;-0.2 {D=!D;} speed-=0.01;
+        if speed&lt;-0.1 {D=!D;} speed-=0.01;
     }
 }
 

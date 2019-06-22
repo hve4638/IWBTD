@@ -51,7 +51,7 @@ with(obj_event_ending) shake=4;
             <kind>1</kind>
             <string>///credit
 dimage=4;
-dx=512-8; dy=364+32;
+dx=512-8; dy=352;
 dmovalp=0.06;
 </string>
           </argument>

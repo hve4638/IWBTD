@@ -31,6 +31,7 @@ col = 723723;
 firedelay = 10;
 firecool = 3;
 dustcnt = 20;
+ind = 0;
 </string>
           </argument>
         </arguments>
@@ -64,14 +65,18 @@ if I&lt;=DELAY
         if ++prt[16]==0 event_user(0);
         part_type_color1(particle[16],other.col);
         part_system_depth(Sys[16],-5);
-        part_emitter_region(Sys[16],emitter[16],other.x-10,other.x+10,other.y,other.y-16,1,1);
+        part_emitter_region(Sys[16],emitter[16],other.x-9,other.x+9,other.y,other.y-16,1,1);
         part_emitter_burst(Sys[16],emitter[16],particle[16],other.dustcnt);
     }
 }
 else if FIREMIN&lt;= I&amp;&amp; I&lt;=FIREMAX &amp;&amp; I mod 2 == 0
 {
     var i=instance_create(x,y,obj_laser);
-    with(i) {image_angle=90; ar=3; ad=2;}
+    with(i) {
+        image_angle=90;
+        ar=3; ad=2;
+        image_index = other.ind;
+    }
     
     scp_shake(16,3,0);
     

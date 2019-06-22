@@ -64,6 +64,7 @@
 "normal" = "guy"
 
 <stage>
+"u" = "undefined"
 "1" = "1 Stage - Forest"
 "2" = "2 Stage - Cave"
 "3" = "3 Stage - Seabed"
@@ -72,3 +73,4 @@
 "6" = "? Stage - Lab"
 "last" = "between Dimension"
 "tp" = "Teleport Room"
+"altar" = "???"

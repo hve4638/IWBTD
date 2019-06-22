@@ -115,10 +115,10 @@ if i {
     
     else if type=2 { //follow-roomcut cam
         xx=floor(target.x/mx)*mx; yy=floor(target.y/my)*my;
-        if rx+MR&lt;xx {rx+=point_distance(rx,0,xx,0)/MX;} else if rx&lt;xx {rx=xx;}
-        if rx-MR&gt;xx {rx-=point_distance(rx,0,xx,0)/MX;} else if rx&gt;xx {rx=xx;}
-        if ry+MR&lt;yy {ry+=point_distance(ry,0,yy,0)/MY;} else if ry&lt;yy {ry=yy;} 
-        if ry-MR&gt;yy {ry-=point_distance(ry,0,yy,0)/MY;} else if ry&gt;yy {ry=yy;}
+        if rx+MR&lt;xx {rx+=point_distance(rx,0,xx,0)/MX;}// else if rx&lt;xx {rx=xx;}
+        if rx-MR&gt;xx {rx-=point_distance(rx,0,xx,0)/MX;}// else if rx&gt;xx {rx=xx;}
+        if ry+MR&lt;yy {ry+=point_distance(ry,0,yy,0)/MY;}// else if ry&lt;yy {ry=yy;} 
+        if ry-MR&gt;yy {ry-=point_distance(ry,0,yy,0)/MY;}// else if ry&gt;yy {ry=yy;}
     }
     else if type=3 { //follow-variable cam
         xx=tx; yy=ty;

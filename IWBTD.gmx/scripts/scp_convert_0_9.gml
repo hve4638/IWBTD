@@ -26,6 +26,46 @@ with(sys_global) {
         //show_message(troom);
 
         troom = asset_get_index(PREROOM[? troom]);
+        switch(troom)
+        {
+            case rmstage01a:
+            case rmstage01b:
+            case rmstage01c:
+                tx = -1; ty = -1;
+                troom = rmstage01a;
+            break;
+            
+            case rmstage02a:
+            case rmstage02b:
+                tx = -1; ty = -1;
+                troom = rmstage02a;
+            break;
+            
+            case rmstage03a:
+            case rmstage03b:
+            case rmstage03c:
+                tx = -1; ty = -1;
+                troom = rmstage03a;
+            break;
+            
+            
+            case rmstage04a:
+            case rmstage04b:
+            case rmstage04c:
+                tx = -1; ty = -1;
+                troom = rmstage04a;
+            break;
+            
+            case rmstage05a:
+            case rmstage05b:
+            case rmstage05c:
+            case rmstage05d:
+            case rmstage05e:
+            case rmboss05:
+                tx = -1; ty = -1;
+                troom = rmstage06a;
+            break;
+        }
         scp_save(tx,ty,troom);
     }
     num=1;

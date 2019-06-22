@@ -76,7 +76,7 @@ with(obj_event_ending) instance_destroy();</code>
     <instance objName="obj_teleport" x="224" y="128" name="inst_4FC76ABF" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmstage04d;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="192" y="352" name="inst_6D15AFEA" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmstage05a;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="256" y="352" name="inst_4A220066" locked="0" code="per=3; type=1; visible=1;&#xA;rx=608; ry=160;&#xA;GOTO=rmstage05d;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_teleport" x="480" y="192" name="inst_8C693BA4" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmstageFinal0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_teleport" x="544" y="128" name="inst_8C693BA4" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmstageFinal0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="96" y="128" name="inst_D79A0379" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmboss02;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="416" y="128" name="inst_CB92AF83" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmstage06e;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="352" y="32" name="inst_5BCB36DD" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmending1;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
@@ -94,6 +94,7 @@ with(obj_event_ending) instance_destroy();</code>
     <instance objName="obj_teleport" x="288" y="128" name="inst_23EE933E" locked="0" code="xper=0; type=1; visible=1;&#xA;GOTO=rmstage06b;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="288" y="320" name="inst_677BA5EA" locked="0" code="xper=0; type=1; visible=1;&#xA;GOTO=rmstage06c;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleport" x="416" y="352" name="inst_35D76C51" locked="0" code="xper=0; type=1; visible=1;&#xA;GOTO=rmstage06d;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_teleport" x="480" y="192" name="inst_6EF0428C" locked="0" code="per=0; type=1; visible=1;&#xA;GOTO=rmbosslast;&#xA;" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="noneuse" x="672" y="320" w="32" h="32" xo="32" yo="0" id="10000246" name="inst_34B3EAE5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

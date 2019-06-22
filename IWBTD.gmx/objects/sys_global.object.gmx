@@ -31,6 +31,7 @@ globalvar upbutton, leftbutton, rightbutton, downbutton, shotbutton, jumpbutton,
 globalvar wuss, guy;
 globalvar kid_hp, kid_mxhp, kid_inv;
 globalvar SWITCH;
+globalvar boss;
 globalvar prever;
 T=0; time=0; death=0; num=1; ontp=0; ongod=0; ondeal=0; showvar=0;
 cansave=0; vismask=0; bgmset=true;
@@ -432,6 +433,7 @@ if wuss {
     || room==rmboss03
     || room==rmboss04 
     || room==rmboss05 
+    || room==rmboss06 
     || room==rmstage04b {kid_mxhp=3; kid_hp=3;}
     else {kid_mxhp=1; kid_hp=1;}
 }
@@ -670,6 +672,29 @@ if cheat &amp;&amp; (ontp || ongod || vismask || ondeal || showvar || wuss) {
             a+=' fade: '+string(fade_set)+' ('+string(fade_get)+")#";
             a+=' view angle: '+string(view_angle)+"#";
         }
+        with(obj_replay)
+        {
+            var i=clamp(rec_pos,0,ds_list_size(ds_x)-1);
+            var X=ds_list_find_value(ds_x,i);
+            var Y=ds_list_find_value(ds_y,i);
+            var R=ds_list_find_value(ds_rm,i);
+            var SPR=ds_list_find_value(ds_spr,i);
+            var IDX=ds_list_find_value(ds_idx,i);
+            var XS=ds_list_find_value(ds_xs,i);
+            var YS=ds_list_find_value(ds_ys,i);
+            var ST=ds_list_find_value(ds_st,i);
+            a+='[obj_replay]#';
+            a+=' visible : ' + string(visible) +'#';
+            a+=' rec_play : ' + string(rec_playing) +'#';
+            a+=' rec_speed : ' + string(rec_speed) +'#';
+            a+=' rec_pos : ' + string(rec_pos) +'#';
+            a+='('+string(X)+','+string(Y)+')#';
+            a+='room : ' + string(room_get_name(R)) + '#';
+            a+='sprite : ' + string(SPR) + '('+string(IDX)+')#';
+            a+='st : ' + string(ST) +'#'
+            
+        }
+        
         with(obj_trigger) {
             if On {
                 a+='[obj_trigger]#';

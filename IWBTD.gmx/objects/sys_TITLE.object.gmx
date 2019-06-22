@@ -98,8 +98,8 @@ part_type_blend(particle,0);
 part_type_life(particle,30,300);
 emitter = part_emitter_create(Sys);
 
-part_emitter_region(Sys,emitter,0,800,615,590,0,0);
-part_emitter_stream(Sys,emitter,particle,2);
+part_emitter_region(Sys,emitter,0,800,606,610,0,0);
+part_emitter_stream(Sys,emitter,particle,1);
 </string>
           </argument>
         </arguments>
@@ -237,10 +237,10 @@ if ON &amp;&amp; !setconfig {
                             }
                         }
                         else if select[3]==2 { //back
-                            ds_list_clear(ds_tmp);
-                            ds_list_read(ds_tmp,sys_global.ldata[num]);
-                            ds_list_replace(ds_tmp,4,s_dif[num]);
-                            sys_global.ldata[num]=ds_list_write(ds_tmp);
+                            ds_map_clear(ds_tmp2);
+                            ds_map_read(ds_tmp2,sys_global.ldata[num]);
+                            ds_tmp2[? "wuss"] = s_dif[num];
+                            sys_global.ldata[num]=ds_map_write(ds_tmp2);
                             scp_localsave();
                             
                             setselect=2;

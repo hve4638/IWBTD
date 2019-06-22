@@ -78,7 +78,7 @@ cansave=1;</code>
     <instance objName="obj_text" x="832" y="256" name="inst_531E7A4E" locked="0" code="text=&quot;Key Reset&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_save" x="640" y="352" name="inst_DF7D3341" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="1008" y="320" name="inst_37510B07" locked="0" code="cs = 61;&#xA;c_goto = rmteleport2;&#xA;c_x = 336;&#xA;c_y = 375;" scaleX="0.5" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger" x="288" y="320" name="inst_6A08EBD0" locked="0" code="cs = 63;&#xA;c_goto = rmaltar&#xA;c_x = 940;&#xA;c_y = 375;&#xA;" scaleX="0.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger" x="288" y="320" name="inst_6A08EBD0" locked="0" code="cs = 63;&#xA;c_goto = rmaltar&#xA;c_x = 896;&#xA;c_y = 375;&#xA;" scaleX="0.5" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile06" x="1056" y="576" w="32" h="32" xo="0" yo="64" id="10096452" name="inst_5BC8C77E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

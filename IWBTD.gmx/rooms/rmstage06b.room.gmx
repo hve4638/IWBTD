@@ -4,7 +4,7 @@
   <width>3200</width>
   <height>1824</height>
   <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -392,6 +392,7 @@ with(obj_water) image_alpha = 0.5;</code>
     <instance objName="spr_spike_l" x="2880" y="1792" name="inst_BC5FF593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_light" x="2592" y="864" name="inst_E5266A65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_light" x="2944" y="864" name="inst_002F779C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_save_wuss" x="1264" y="416" name="inst_CDCDE24E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile06" x="64" y="0" w="32" h="32" xo="0" yo="64" id="10076603" name="inst_6D7E4944" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

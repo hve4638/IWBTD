@@ -108,7 +108,13 @@ switch(cs)
         } else if ps==90 {
             cansave=true;
             room_goto(rmboss1b);
-        } else if ps==92 {
+        } else if ps==91 {
+            with(sys_cam)
+            {
+                fade_col = c_black;
+                fade_set = 1;
+                fade_get = -0.01;
+            }
             ongod=false;
             with(obj_player) vspeed = maxVspeed;
             with(obj_ignis) fire=140;
@@ -794,27 +800,11 @@ switch(cs)
         if ps==75 {
             with(obj_player) {frozen=true;}
         }
-        else if ps==100 {
-            with(sys_cam) {
-                fade_get=0.015;
-                fade_col=c_black;
-            }
-            cansave=0;
-        }
-        else if ps==225 {
+        else if ps==120 {
             persistent=1;
             room_goto(rmstage02a);
         }
-        else if ps==226 {
-            with(Me) frozen=true;
-            with(sys_cam) {
-                fade_set=1;
-                fade_get=-0.01;
-                fade_col=c_black;
-            }
-        }
-        else if ps==275 {
-            with(Me) frozen=false;
+        else if ps==121 {
             cansave=true;
             instance_destroy();
         }

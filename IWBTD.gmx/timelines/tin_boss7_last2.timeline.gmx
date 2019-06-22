@@ -136,7 +136,13 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var i=instance_create(t_i,448,obj_lasergener2);
+            <string>/*with(instance_create(Me.x,384,obj_lasergener3))
+{
+    col = make_colour_rgb(53,0,53);
+    firedelay = 20;
+    dustcnt = 10;
+}*/
+var i=instance_create(t_i,448,obj_lasergener2);
 i.snd=snd_blast;// i.t=15;
 
 t_i-=64;
@@ -201,21 +207,26 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if t_i mod 2 == 0 {
-    var i=instance_create(Me.x,448,obj_lasergener2);
-    var i=instance_create(Me.x+64,448,obj_lasergener2);
-    var i=instance_create(Me.x-64,448,obj_lasergener2);
+            <string>if choose(1,0) { //(t_i mod 2 == 0)
+    instance_create(Me.x,416,obj_lasergener3);
+    instance_create(Me.x+64,416,obj_lasergener3);
+    instance_create(Me.x-64,416,obj_lasergener3);
     
 }
 else {
-    var i=instance_create(Me.x+32,448,obj_lasergener2);
-    var i=instance_create(Me.x-32,448,obj_lasergener2);
-    var i=instance_create(Me.x+96,448,obj_lasergener2);
-    var i=instance_create(Me.x-96,448,obj_lasergener2);
+    instance_create(Me.x + 32,416,obj_lasergener3);
+    instance_create(Me.x - 32,416,obj_lasergener3);
+    instance_create(Me.x + 96,416,obj_lasergener3);
+    instance_create(Me.x - 96,416,obj_lasergener3);
 }
-with(obj_lasergener2) snd=snd_blast;
-
-if t_i++&lt;3 timeline_position-=45;
+with(obj_lasergener3)
+{
+    col = make_colour_rgb(80,0,0);
+    firedelay = 25;
+    dustcnt = 10;
+    ind = 1;
+}
+if t_i++&lt;3 timeline_position-=48;
 else {
     t_i=0;
 }

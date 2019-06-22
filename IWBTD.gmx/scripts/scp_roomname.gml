@@ -25,12 +25,6 @@ case rmboss04:
 case rmstage04e:
     return es('stage','4');
 
-case rmstage05a:
-case rmstage05b:
-case rmstage05c:
-case rmstage05d:
-case rmstage05e:
-case rmboss05:
 case rmstage06a:
 case rmstage06b:
 case rmstage06c:
@@ -46,10 +40,11 @@ case rmstageFinal3:
     return es('stage','6');
 
 case rmteleport:
+case rmteleport2:
     return es('stage','tp');
 
-case rmlastboss: 
-    return es('stage','last');
+case rmaltar:
+    return es('stage','altar');
 default:
     return es('stage','u');
 }

@@ -297,6 +297,8 @@ alarm[0]=50;
 scp_timeline(tin_boss8_init);
 init = false;
 with(obj_save) {instance_destroy();}
+if wuss {kid_mxhp=3; kid_hp=3;}
+
 
 var i=instance_create(x,y,obj_charge);
 with(i) {
@@ -384,13 +386,13 @@ if onhealth {
     vy=view_yview;
     
     if HP!=drawhp {
-     if abs(drawhp-HP)&lt;0.5 {drawhp=HP;}
+     //if abs(drawhp-HP)&lt;0.5 {drawhp=HP;}
      drawhp+=(HP-drawhp)/10;
     }
     
     _p=739*(drawhp/MAXHP);
     draw_sprite_ext(spr_bar,0,vx+30,vy+32,1,1,0,c_white,1);
-    draw_sprite_part_ext(spr_bar,8,0,0,_p,16,vx+30,vy+32,1,1,c_white,1);
+    draw_sprite_part_ext(spr_bar,5,0,0,_p,16,vx+30,vy+32,1,1,c_white,1);
     draw_sprite_ext(spr_bar,1,vx+30,vy+32,1,1,0,c_white,1);
 }
 </string>

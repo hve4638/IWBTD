@@ -149,8 +149,8 @@
     <instance objName="obj_walljumpR" x="2784" y="192" name="inst_4DE402D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_walljumpR" x="2784" y="288" name="inst_81F7F859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_walljumpR" x="2784" y="320" name="inst_57EE5D94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spikeM" x="2816" y="144" name="inst_0BF89DD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spikeM" x="2864" y="144" name="inst_3172CF26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spikeM" x="2816" y="144" name="inst_0BF89DD2" locked="0" code="if wuss instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spikeM" x="2864" y="144" name="inst_3172CF26" locked="0" code="if wuss instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="2880" y="128" name="inst_384D3348" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="2928" y="128" name="inst_68C98F31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spikeM" x="2960" y="144" name="inst_B2F28C78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -247,6 +247,8 @@
     <instance objName="obj_block" x="5600" y="160" name="inst_D272F120" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="5592" y="192" name="inst_36C3E6B5" locked="0" code="cs=52;" scaleX="2" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="sys_lighting" x="64" y="0" name="inst_7F83AA8A" locked="0" code="val=45;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_save_wuss" x="2832" y="128" name="inst_7DECB0E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_save_wuss" x="4032" y="224" name="inst_F7D24076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile11" x="32" y="448" w="32" h="32" xo="0" yo="32" id="10074626" name="inst_8213EF6A" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

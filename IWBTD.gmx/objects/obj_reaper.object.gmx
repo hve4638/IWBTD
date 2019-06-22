@@ -278,7 +278,7 @@ if onhealth {
         
         scp_bosskill(2);
     }
-    else if hp&lt;20 &amp;&amp; timeline_index!=tin_boss4lp {OnInv=true;}
+    else if hp&lt;220*0.2 &amp;&amp; timeline_index!=tin_boss4lp {OnInv=true;}
 }
 </string>
           </argument>
@@ -304,7 +304,7 @@ if onhealth {
             <kind>1</kind>
             <string>if onhealth {
     if hp!=drawhp {
-     if abs(drawhp-hp)&lt;0.5 {drawhp=hp;}
+     //if abs(drawhp-hp)&lt;0.5 {drawhp=hp;}
      drawhp+=(hp-drawhp)/10;
     }
     _p=739*(drawhp/220);

@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_hmore" x="352" y="336" name="inst_70FD4646" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vmore" x="480" y="336" name="inst_D849A6C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_event_boss" x="1024" y="384" name="inst_726C68F2" locked="0" code="scp_timeline(tin_ending3);&#xA;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_event_boss" x="928" y="384" name="inst_726C68F2" locked="0" code="scp_timeline(tin_ending3);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile01" x="32" y="544" w="32" h="32" xo="0" yo="96" id="10065736" name="inst_66510A05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0;
+            <string>image_index = 3;
+image_speed=0;
 image_xscale=100;
 image_yscale=0;
 i=0.05;

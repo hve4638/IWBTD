@@ -194,6 +194,31 @@ scp_save(580,407-32,rmteleport);
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///particle
+if onpart {
+    part_emitter_region(Sys,emitter,0,800,606,610,0,0);
+    part_emitter_burst(Sys,emitter,particle,1);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>dalpha=clamp(dalpha+dmovalp,0,1);
 talpha=clamp(talpha+tmovalp,0,1);
 if isend {
@@ -231,31 +256,6 @@ with(obj_player) {
     adhspd=other.onmov_player;
 }
 I++;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///particle
-if onpart {
-    part_emitter_region(Sys,emitter,0,800,606,610,0,0);
-    part_emitter_burst(Sys,emitter,particle,1);
-}
 </string>
           </argument>
         </arguments>

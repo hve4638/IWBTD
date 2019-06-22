@@ -34,7 +34,7 @@ t_i=0;
     </event>
   </entry>
   <entry>
-    <step>320</step>
+    <step>270</step>
     <event>
       <action>
         <libid>1</libid>
@@ -84,11 +84,9 @@ with(sys_part) {
           <argument>
             <kind>1</kind>
             <string>///credit
-if 50==t_i {
-    dimage=1;
-    dx=1048+8; dy=352;
-    dmovalp=0.06;
-}
+dimage=1;
+dx=960; dy=352;
+dmovalp=0.06;
 </string>
           </argument>
         </arguments>
