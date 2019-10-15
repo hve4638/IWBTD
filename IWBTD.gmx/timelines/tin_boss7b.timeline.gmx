@@ -19,7 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fade_get=0.05;
+            <string>///Ball
+fade_get=0.05;
 ARMOR=0.5;
 
 p_i=0; p_j=0;

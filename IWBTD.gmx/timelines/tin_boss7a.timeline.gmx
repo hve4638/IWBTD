@@ -19,7 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0,0,obj_keycontrol);
+            <string>///Key
+instance_create(0,0,obj_keycontrol);
 </string>
           </argument>
         </arguments>

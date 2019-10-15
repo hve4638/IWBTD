@@ -128,7 +128,7 @@
       <sprite>sprites\sprite73</sprite>
       <sprite>sprites\spr_spikeA</sprite>
     </sprites>
-    <sprites name="ingame_noneused">
+    <sprites name="nouse">
       <sprite>sprites\sprPlayerKiller</sprite>
       <sprite>sprites\spr_tempcamera</sprite>
       <sprite>sprites\temp</sprite>
@@ -205,6 +205,7 @@
       <sprite>sprites\spr_scythe</sprite>
       <sprite>sprites\spr_scythe_red</sprite>
       <sprite>sprites\spr_fireball</sprite>
+      <sprite>sprites\spr_fireball_red</sprite>
       <sprite>sprites\spr_effect</sprite>
       <sprite>sprites\spr_knife</sprite>
       <sprite>sprites\spr_lightsword</sprite>

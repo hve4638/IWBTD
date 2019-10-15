@@ -2858,6 +2858,95 @@ if prt[65]==0 {
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///66. valencia fireball
+if prt[66]==0 { prt[66]++;
+    Sys[66]=part_system_create();
+    particle[66] = part_type_create();
+    part_system_depth(Sys[66],-15);
+    part_type_shape(particle[66],pt_shape_sphere);
+    part_type_size(particle[66],1,1,-0.04,0);
+    part_type_scale(particle[66],0.3,0.3);
+    part_type_color2(particle[66],make_colour_rgb(255,128,0),8454143);
+    part_type_alpha2(particle[66],0.8,0.3);
+    part_type_speed(particle[66],0.10,0.10,0,0);
+    part_type_direction(particle[66],0,359,0,0);
+    part_type_gravity(particle[66],0,270);
+    part_type_orientation(particle[66],0,0,0,0,1);
+    part_type_blend(particle[66],1);
+    part_type_life(particle[66],5,15);
+    emitter[66] = part_emitter_create(Sys[66]);
+}
+
+/*
+    part_emitter_region(Sys[66],emitter[66],9,-9,10,-10,1,1);
+    part_emitter_burst(Sys[66],emitter[66],particle[66],5);
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///67. valencia Shadow Field Effect
+//Used: tin_boss4d
+
+if prt[67]==0 {
+    Sys[67]=part_system_create();
+    particle[67] = part_type_create();
+    part_system_depth(Sys[67],-10);
+    part_type_shape(particle[67],pt_shape_sphere);
+    part_type_size(particle[67],0.10,0.10,0,0);
+    part_type_scale(particle[67],4,5);
+    part_type_color1(particle[67],c_black);
+    part_type_alpha2(particle[67],0.4,0);
+    part_type_speed(particle[67],0.6,0.7,0,0);
+    part_type_direction(particle[67],0,359,0.03,0);
+    part_type_gravity(particle[67],0.04,90);
+    part_type_orientation(particle[67],0,0,0,0,1);
+    part_type_blend(particle[67],0);
+    part_type_life(particle[67],60,60);
+    emitter[67] = part_emitter_create(Sys[67]);
+    prt[67]++;
+}
+
+/*
+part_emitter_region(Sys[67],emitter[67],-371,371,-10,10,1,0);
+part_emitter_stream(Sys[67],emitter[67],particle[67],10);
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="7" enumb="4">
       <action>

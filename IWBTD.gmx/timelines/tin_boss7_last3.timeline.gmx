@@ -115,7 +115,7 @@ if 1&lt;t_i {
             speed=0;
             get_speed=0.04;
             max_speed=7;
-            type=3;
+            type=4;
             On=false;
             
             image_xscale=0.7;

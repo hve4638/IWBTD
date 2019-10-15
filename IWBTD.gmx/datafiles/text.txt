@@ -23,7 +23,7 @@
 "reset" = "reset"
 
 <title>
-"version"="version 0.9"
+"version"="version 0.91"
 "explanation"="Select: Arrow key#Confirm: Enter key"
 
 
@@ -53,7 +53,6 @@
 "dimension" = "The Deminsion"
 "mage"="Reina"
 "vampire"="Valencia"
-"dragon"="Essence of Power"
 "witch" = "???"
 "time" = "???"
 "ruinguardian"="Ribra"

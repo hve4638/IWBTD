@@ -31,6 +31,7 @@ col = 723723;
 firedelay = 10;
 firecool = 3;
 dustcnt = 20;
+shakepower = 16;
 ind = 0;
 </string>
           </argument>
@@ -78,7 +79,7 @@ else if FIREMIN&lt;= I&amp;&amp; I&lt;=FIREMAX &amp;&amp; I mod 2 == 0
         image_index = other.ind;
     }
     
-    scp_shake(16,3,0);
+    scp_shake(shakepower,3,0);
     
     i=instance_create(x,y,obj_charge);
     with(i) {

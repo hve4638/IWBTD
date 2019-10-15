@@ -48,7 +48,7 @@ t_i=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>onholy=true;
+            <string>
 onfield=true;
 onfield_x1=x-10;
 onfield_x2=x+10;
@@ -109,6 +109,7 @@ onfield_x2=min(onfield_x2+30,800);
 
 if onfield_x1!=0 || onfield_x2!=800 timeline_position--;
 else {
+    onholy=true;
     t_i=800;
 }
 </string>
@@ -136,17 +137,20 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*with(instance_create(Me.x,384,obj_lasergener3))
+            <string>with(instance_create(t_i,448 - 32,obj_lasergener3))
 {
-    col = make_colour_rgb(53,0,53);
-    firedelay = 20;
+    col = 128;//make_colour_rgb(53,0,53);
+    firedelay = 40;
     dustcnt = 10;
-}*/
-var i=instance_create(t_i,448,obj_lasergener2);
-i.snd=snd_blast;// i.t=15;
+    shakepower = 5;
+    ind = 1;
+}
+//var i=instance_create(t_i,448,obj_lasergener2);
+//i.snd=snd_blast;// i.t=15;
+//i.FUSE = 40;
 
 t_i-=64;
-if 0&lt;t_i timeline_position--;
+if 0&lt;t_i timeline_position-=1;
 else t_i+=32;
 </string>
           </argument>
@@ -173,8 +177,17 @@ else t_i+=32;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var i=instance_create(t_i,448,obj_lasergener2);
-i.snd=snd_blast;// i.t=15;
+            <string>//var i=instance_create(t_i,448,obj_lasergener2);
+//i.snd=snd_blast;// i.t=15;
+//i.FUSE = 40;
+with(instance_create(t_i,448 - 32,obj_lasergener3))
+{
+    col = 128;//make_colour_rgb(53,0,53);
+    firedelay = 40;
+    dustcnt = 10;
+    shakepower = 5;
+    ind = 1;
+}
 
 t_i+=64;
 if t_i&lt;800 timeline_position--;
@@ -207,18 +220,21 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if choose(1,0) { //(t_i mod 2 == 0)
+            <string>if (t_i mod 2 == 0)
+{
     instance_create(Me.x,416,obj_lasergener3);
     instance_create(Me.x+64,416,obj_lasergener3);
     instance_create(Me.x-64,416,obj_lasergener3);
     
 }
-else {
+else
+{
     instance_create(Me.x + 32,416,obj_lasergener3);
     instance_create(Me.x - 32,416,obj_lasergener3);
     instance_create(Me.x + 96,416,obj_lasergener3);
     instance_create(Me.x - 96,416,obj_lasergener3);
 }
+
 with(obj_lasergener3)
 {
     col = make_colour_rgb(80,0,0);
@@ -226,6 +242,7 @@ with(obj_lasergener3)
     dustcnt = 10;
     ind = 1;
 }
+
 if t_i++&lt;3 timeline_position-=48;
 else {
     t_i=0;

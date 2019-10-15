@@ -36,6 +36,8 @@ d_s=ds_queue_create();
 d_i=ds_queue_create();
 d_xs=ds_queue_create();
 d_ys=ds_queue_create();
+
+scp_echo_create(5);
 </string>
           </argument>
         </arguments>
@@ -71,6 +73,9 @@ ds_queue_destroy(d_s);
 ds_queue_destroy(d_i);
 ds_queue_destroy(d_xs);
 ds_queue_destroy(d_ys);
+
+
+scp_echo_destroy();
 </string>
           </argument>
         </arguments>
@@ -141,7 +146,6 @@ if ds_queue_empty(d_x) {
     lastx=ds_queue_head(d_x);
     lasty=ds_queue_head(d_y);
 }
-
 
 if enable &amp;&amp; collision_point(lastx,lasty,obj_player,1,0) scp_kill();
 </string>

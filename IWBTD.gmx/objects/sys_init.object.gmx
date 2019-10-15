@@ -91,6 +91,9 @@ with(sys_global) {
     if prever&lt;0.9 scp_convert_0_9();
 }
 
+var n="clear";
+if file_exists(n) { isclear = true; }
+else { isclear = false; }
 </string>
           </argument>
         </arguments>

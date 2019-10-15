@@ -65,7 +65,7 @@ cansave=1;</code>
     <instance objName="obj_tp" x="512" y="256" name="inst_691652E3" locked="0" code="ROOM=rmstage02a;&#xA;gotox=176;&#xA;gotoy=400;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tp" x="640" y="256" name="inst_55BE98CC" locked="0" code="ROOM=rmstage03a;&#xA;gotox=160;&#xA;gotoy=320;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tp" x="768" y="256" name="inst_272DAF32" locked="0" code="ROOM=rmstage04a;&#xA;gotox=224;&#xA;gotoy=1632;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tp" x="896" y="256" name="inst_55F1E704" locked="0" code="ROOM=rmstage05a;&#xA;gotox=80;&#xA;gotoy=1024;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tp" x="896" y="256" name="inst_55F1E704" locked="0" code="ROOM=rmstage06a;&#xA;gotox=80;&#xA;gotoy=432;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_create" x="672" y="368" name="inst_C1D3FEA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_text" x="400" y="224" name="inst_B1CB9226" locked="0" code="text=&quot;Stage 1&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_text" x="528" y="224" name="inst_915771FD" locked="0" code="text=&quot;Stage 2&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

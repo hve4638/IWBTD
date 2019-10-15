@@ -16,7 +16,7 @@ with(sys_global) {
         ds_list_clear(tmplist);
         ds_list_read(tmplist,tmp);
         
-        isclear=false;
+        //isclear=false;
         //isclear=real(ds_list_find_value(tmplist,0));
         prever=ds_list_find_value(tmplist,1);
         

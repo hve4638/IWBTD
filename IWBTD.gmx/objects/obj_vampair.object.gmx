@@ -332,11 +332,11 @@ if ondarker {
 
 if onfield {
     with(sys_part) {
-        if ++prt[15]==0 event_user(0);
-        part_system_depth(Sys[15],-17);
-        part_type_color1(particle[15],make_colour_rgb(149,0,0));
-        part_emitter_region(Sys[15],emitter[15],other.onfield_x1,other.onfield_x2,434 -32,454 -32,1,0);
-        part_emitter_burst(Sys[15],emitter[15],particle[15],10);
+        if ++prt[67]==0 event_user(0);
+        part_system_depth(Sys[67],-30);
+        //part_type_color1(particle[15],make_colour_rgb(149,0,0));
+        part_emitter_region(Sys[67],emitter[67],other.onfield_x1,other.onfield_x2,434 -32,454 -32,1,0);
+        part_emitter_burst(Sys[67],emitter[67],particle[67],10);
     }
 }
 
@@ -511,7 +511,7 @@ I++;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Danmaku trigger
+            <string>///Danmak trigger
 with(obj_danmaku) {
     if tag[0]==1 {
         if tag[1]==0 {
@@ -767,6 +767,10 @@ if nx_p==tin_boss7e_2
 
 tp_t=1;
 
+
+//nx_p = tin_boss7_last2;
+//phase = 3;
+//
 /*if (phase==3 &amp;&amp; HP/MAXHP&lt;0.1) {
     with(sys_part) {
         if ++prt[44]==0 event_user(0);

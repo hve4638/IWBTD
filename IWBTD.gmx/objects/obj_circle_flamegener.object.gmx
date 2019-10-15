@@ -84,7 +84,7 @@ movang=4;
         var i=instance_create(x,y,obj_fireball);
         with(i) {
             direction=j; speed=-3.5;
-            type=3;
+            type=4;
             
             get_speed=0.05;
             min_speed=-5.5;
